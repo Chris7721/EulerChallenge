@@ -1,5 +1,5 @@
-function largestPalindromeProduct(n) {
-    let start, end;
+function multiplier(n){
+  let start, end;
   let palindromes = [];
   if(n == 2){
     start=10; end=99;
@@ -16,8 +16,8 @@ function largestPalindromeProduct(n) {
     }
   }
   return maxPalindrome(palindromes);
+  //this method should return the array of palindromes || palindromeChecker
 }
-
 
 function palindromeChecker(num){
   if(JSON.stringify(num) === JSON.stringify(num).split("").reverse().join("")){
@@ -36,4 +36,14 @@ function maxPalindrome(palindromes){
   return currLargest;
 }
 
-console.log(largestPalindromeProduct(3));
+console.log(multiplier(3));
+
+
+//--> Find the largest palindrome made from the product of two n-digit numbers.
+
+//first function takes in the num of digit
+//the a nested forloop is run
+
+
+//created a mehod that would check if the num is a palindrome and push it to an array
+//the final method checks for the highest palindrome
