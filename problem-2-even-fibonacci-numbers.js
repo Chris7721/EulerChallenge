@@ -18,4 +18,3 @@ function fibonacci(num) {
   return sol;
 }
 
-// fiboEvenSum(10);
