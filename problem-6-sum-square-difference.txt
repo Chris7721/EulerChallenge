@@ -1,8 +1,13 @@
+function sumSquareDifference(n) {
+  // Good luck!
+  return squareOfSum(n) - sumOfSquares(n);
+}
 function sumOfSquares(n){
     let sum = 0;
     for(let i = 1; i <= n; i++){
       sum+= Math.pow(i, 2);  
     }
+    return sum;
 }
 
 function squareOfSum(n){
@@ -10,5 +15,6 @@ function squareOfSum(n){
     for(let i = 1; i <= n; i++){
         sum += i;  
     }
-    Math.pow(sum, 2);
+    return Math.pow(sum, 2);
 }
+sumSquareDifference(100);
