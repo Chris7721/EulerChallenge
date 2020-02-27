@@ -14,9 +14,9 @@ function smallestMult(limit) {
         var i, limit = Math.ceil(Math.sqrt(n));
         // since the main loop generates odd numbers only
         // we can start testing primality dividing by 3
-        console.log(`limit-out ${limit}`);
+        // console.log(`limit-out ${limit}`);
         for (i = 3; i <= limit; i += 2) {
-            console.log(`limit-in ${limit}`);
+            // console.log(`limit-in ${limit}`);
             if (n % i === 0) {
                 return false;
             }
